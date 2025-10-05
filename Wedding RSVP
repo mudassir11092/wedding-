@@ -82,9 +82,11 @@
     <div class="forms-section">
       <h2 style="color:var(--royal-deep);text-align:center;">RSVP — Reception & Walima</h2>
       <!-- EMBED FORM 1 HERE -->
+      <p style="text-align:center;color:#888;">(Google Form 1 will appear here)</p>
       
       <h2 style="color:var(--royal-deep);text-align:center;margin-top:40px;">RSVP — Mehndi, Haldi, Nikkah & Walima</h2>
       <!-- EMBED FORM 2 HERE -->
+      <p style="text-align:center;color:#888;">(Google Form 2 will appear here)</p>
     </div>
 
     <footer>
