@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Mudassir & Farhana — Wedding RSVP</title>
+<style>
+  :root{
+    --royal-deep:#2A1B4D;
+    --royal-gold:#C9A34A;
+    --royal-cream:#FFF8EE;
+    --muted:#6B5B7B;
+    --accent:#4A2A6B;
+  }
+  body{
+    margin:0;
+    font-family:"Segoe UI", Roboto, system-ui, -apple-system;
+    background:linear-gradient(180deg,#f8f6f9 0%,#ffffff 100%);
+    color:#1b1b1b;
+  }
+  .container{max-width:1100px;margin:auto;padding:24px;}
+  .card{
+    background:white;border-radius:18px;padding:28px;
+    box-shadow:0 8px 30px rgba(40,25,70,0.08);
+  }
+  header{display:flex;align-items:center;gap:18px;border-bottom:1px solid #eee;padding-bottom:16px;margin-bottom:20px;}
+  .logo{width:84px;height:84px;border-radius:14px;background:linear-gradient(135deg,var(--royal-deep),var(--accent));
+    display:flex;align-items:center;justify-content:center;color:var(--royal-cream);font-weight:700;font-size:22px;
+    box-shadow:0 6px 18px rgba(42,27,77,0.2);}
+  h1{margin:0;color:var(--royal-deep);font-size:22px;}
+  p.lead{color:var(--muted);margin:4px 0 0;}
+  .events{margin-top:20px;}
+  .event{border-left:6px solid var(--royal-gold);border-radius:10px;padding:12px 16px;margin-bottom:10px;background:#fffaf5;}
+  .event h3{margin:0 0 6px;color:var(--accent);}
+  .meta{font-size:14px;color:#333;margin-bottom:6px;}
+  a.maplink{font-size:14px;color:var(--royal-deep);text-decoration:underline;}
+  .countdown{text-align:center;font-size:26px;font-weight:600;color:var(--accent);margin-top:12px;}
+  .forms-section{margin-top:24px;}
+  iframe{width:100%;border:none;height:850px;border-radius:10px;box-shadow:0 6px 24px rgba(42,27,77,0.08);}
+  footer{text-align:center;margin-top:20px;font-size:13px;color:#666;}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <header>
+      <div class="logo">MA ✦ F</div>
+      <div>
+        <h1>Mudassir & Farhana’s Wedding</h1>
+        <p class="lead">You’re invited to celebrate with us! Kindly RSVP below.</p>
+      </div>
+    </header>
+
+    <div class="events">
+      <div class="event">
+        <h3>Mehndi Ceremony</h3>
+        <div class="meta">22 December 2025 — Raheja Vista Premier Club House, Mohammadwadi, NIBM Road, Pune 411060</div>
+        <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Raheja+Vista+Premier+Club+house+Mohammadwadi+NIBM+road+Pune+411060" target="_blank">View on Google Maps</a>
+      </div>
+
+      <div class="event">
+        <h3>Haldi Ceremony</h3>
+        <div class="meta">23 December 2025 — Club House Amphitheatre, Bramha Avenue Society, NIBM Road, Kondhwa 411048</div>
+        <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Club+House+Amphitheatre+Bramha+Avenue+Society+NIBM+road+Kondhwa+411048" target="_blank">View on Google Maps</a>
+      </div>
+
+      <div class="event">
+        <h3>Nikkah</h3>
+        <div class="meta">24 December 2025 — Arrival 6:30 PM | Nikkah 7:00 PM — Alankaran Lawn, Kapil Woodrow, Jagtap Chowk, Wanowrie, Pune 411040</div>
+        <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Alankaran+Lawn+Kapil+Woodrow+Jagtap+Chowk+Wanowrie+Pune+411040" target="_blank">View on Google Maps</a>
+      </div>
+
+      <div class="event">
+        <h3>Walima (Reception)</h3>
+        <div class="meta">25 December 2025 — Hyatt Regency Pune, Nagar Road, Viman Nagar, Pune 411040</div>
+        <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Hyatt+Regency+Pune+Nagar+Road+Viman+Nagar+Pune+411040" target="_blank">View on Google Maps</a>
+      </div>
+    </div>
+
+    <div id="countdown" class="countdown"></div>
+
+    <div class="forms-section">
+      <h2 style="color:var(--royal-deep);text-align:center;">RSVP — Reception & Walima</h2>
+      <!-- EMBED FORM 1 HERE -->
+      
+      <h2 style="color:var(--royal-deep);text-align:center;margin-top:40px;">RSVP — Mehndi, Haldi, Nikkah & Walima</h2>
+      <!-- EMBED FORM 2 HERE -->
+    </div>
+
+    <footer>
+      <p>Countdown to the Nikah — 24 December 2025, 6:30 PM</p>
+      <p id="timer"></p>
+      <p>For assistance, please WhatsApp +27 671560820</p>
+    </footer>
+  </div>
+</div>
+
+<script>
+const targetDate = new Date("2025-12-24T18:30:00+05:30").getTime();
+const timerEl = document.getElementById('timer');
+function updateCountdown(){
+  const now = Date.now();
+  const diff = targetDate - now;
+  if(diff<=0){timerEl.textContent="It's wedding time! 💍";return;}
+  const d = Math.floor(diff/(1000*60*60*24));
+  const h = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+  const m = Math.floor((diff%(1000*60*60))/(1000*60));
+  const s = Math.floor((diff%(1000*60))/1000);
+  timerEl.textContent=`${d}d ${h}h ${m}m ${s}s remaining`;
+}
+updateCountdown();
+setInterval(updateCountdown,1000);
+</script>
+</body>
+</html>
