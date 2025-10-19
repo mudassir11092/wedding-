@@ -1,117 +1,221 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Mudassir & Farhana — Wedding RSVP</title>
-<style>
-  :root{
-    --royal-deep:#2A1B4D;
-    --royal-gold:#C9A34A;
-    --royal-cream:#FFF8EE;
-    --muted:#6B5B7B;
-    --accent:#4A2A6B;
-  }
-  body{
-    margin:0;
-    font-family:"Segoe UI", Roboto, system-ui, -apple-system;
-    background:linear-gradient(180deg,#f8f6f9 0%,#ffffff 100%);
-    color:#1b1b1b;
-  }
-  .container{max-width:1100px;margin:auto;padding:24px;}
-  .card{
-    background:white;border-radius:18px;padding:28px;
-    box-shadow:0 8px 30px rgba(40,25,70,0.08);
-  }
-  header{display:flex;align-items:center;gap:18px;border-bottom:1px solid #eee;padding-bottom:16px;margin-bottom:20px;}
-  .logo{width:84px;height:84px;border-radius:14px;background:linear-gradient(135deg,var(--royal-deep),var(--accent));
-    display:flex;align-items:center;justify-content:center;color:var(--royal-cream);font-weight:700;font-size:22px;
-    box-shadow:0 6px 18px rgba(42,27,77,0.2);}
-  h1{margin:0;color:var(--royal-deep);font-size:22px;}
-  p.lead{color:var(--muted);margin:4px 0 0;}
-  .events{margin-top:20px;}
-  .event{border-left:6px solid var(--royal-gold);border-radius:10px;padding:12px 16px;margin-bottom:10px;background:#fffaf5;}
-  .event h3{margin:0 0 6px;color:var(--accent);}
-  .meta{font-size:14px;color:#333;margin-bottom:6px;}
-  a.maplink{font-size:14px;color:var(--royal-deep);text-decoration:underline;}
-  .countdown{text-align:center;font-size:26px;font-weight:600;color:var(--accent);margin-top:12px;}
-  .forms-section{margin-top:24px;}
-  iframe{width:100%;border:none;height:850px;border-radius:10px;box-shadow:0 6px 24px rgba(42,27,77,0.08);}
-  footer{text-align:center;margin-top:20px;font-size:13px;color:#666;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudassir &#9825; Farhana :: Hamari Dawat</title>
+
+    <link rel="icon" type="image/png" href="uix/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="uix/favicon.svg" />
+    <link rel="shortcut icon" href="uix/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="uix/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Hamari Daawat" />
+    <link rel="manifest" href="uix/site.webmanifest" />
+
+    <link rel="stylesheet" href="sty/hmdwt-app.css?v=10102025">
+
 </head>
+
 <body>
-<div class="container">
-  <div class="card">
+  <div id='stars'></div><div id='stars2'></div><div id='stars3'></div>
+
+  <i class="grd-page">
     <header>
-      <div class="logo">MA ✦ F</div>
-      <div>
-        <h1>Mudassir & Farhana’s Wedding</h1>
-        <p class="lead">You’re invited to celebrate with us! Kindly RSVP below.</p>
+      <div class="hdr-items">
+        <div class="svg-rasul">Ya RasulAllah</div>
+        <div class="svg-bismillah">Bismillah Hir Rahman Nir Rahim</div>
+        <div class="svg-allah">Ya Allah</div>
       </div>
     </header>
 
-    <div class="events">
-      <div class="event">
-        <h3>Mehndi Ceremony</h3>
-        <div class="meta">22 December 2025 — Raheja Vista Premier Club House, Mohammadwadi, NIBM Road, Pune 411060</div>
-        <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Raheja+Vista+Premier+Club+house+Mohammadwadi+NIBM+road+Pune+411060" target="_blank">View on Google Maps</a>
-      </div>
+    <main> 
+      <section id="hero" class="hero">
+        <div class="txt-pray">In the name of Allah <q>ﷻ</q> <i>the most Beneficent, the most Merciful</i></div>
 
-      <div class="event">
-        <h3>Haldi Ceremony</h3>
-        <div class="meta">23 December 2025 — Club House Amphitheatre, Bramha Avenue Society, NIBM Road, Kondhwa 411048</div>
-        <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Club+House+Amphitheatre+Bramha+Avenue+Society+NIBM+road+Kondhwa+411048" target="_blank">View on Google Maps</a>
-      </div>
+        <div class="txt-blessings">
+          with immense blessings of his adoring grandparents <br>
+          Alhaj Hazrat Sayed Mehboob Ali Shah (RH), Hajiani Sayeda Khairunnisa, <br>Alhaj Ghoolam Mohammed Khan and Hajiani Ayesha Bibi Khan
+        </div>
 
-      <div class="event">
-        <h3>Nikkah</h3>
-        <div class="meta">24 December 2025 — Arrival 6:30 PM | Nikkah 7:00 PM — Alankaran Lawn, Kapil Woodrow, Jagtap Chowk, Wanowrie, Pune 411040</div>
-        <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Alankaran+Lawn+Kapil+Woodrow+Jagtap+Chowk+Wanowrie+Pune+411040" target="_blank">View on Google Maps</a>
-      </div>
+        <div class="txt-presence">
+          In the esteemed presence of his honorable uncles <i>Hazrat Sayed Mohsin Ali Shah, Hazrat Sayed Hafiz Ali Shah, <br>Alhaj Sayed Maqsood Ahmed</i>
+        </div>
 
-      <div class="event">
-        <h3>Walima (Reception)</h3>
-        <div class="meta">25 December 2025 — Hyatt Regency Pune, Nagar Road, Viman Nagar, Pune 411040</div>
-        <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Hyatt+Regency+Pune+Nagar+Road+Viman+Nagar+Pune+411040" target="_blank">View on Google Maps</a>
-      </div>
-    </div>
+        <div class="txt-parent">Alhaj Mr Asif Ali Sayed & Mrs Wahida Sayed</div>
+        <div class="txt-invite">solicit your blessings and request your presence to grace the auspicious occasion of the <span>Wedding events</span> of their beloved son.</div>
 
-    <div id="countdown" class="countdown"></div>
+        <div class="txt-groom">Hafiz Sayed Mudassir Ali</div>
+        <div class="ico-ring"><i>with</i></div>
+        <div class="txt-bride">Sayeda Farhana</div>
+        <div class="txt-host"><i>d/o.</i> Alhaj Mr Abrar Niyamutallah Sayed & Mrs. Fatima Abrar Sayed</div>
 
-    <div class="forms-section">
-      <h2 style="color:var(--royal-deep);text-align:center;">RSVP — Reception & Walima</h2>
-      <!-- EMBED FORM 1 HERE -->
-      <p style="text-align:center;color:#888;">(Google Form 1 will appear here)</p>
-      
-      <h2 style="color:var(--royal-deep);text-align:center;margin-top:40px;">RSVP — Mehndi, Haldi, Nikkah & Walima</h2>
-      <!-- EMBED FORM 2 HERE -->
-      <p style="text-align:center;color:#888;">(Google Form 2 will appear here)</p>
-    </div>
+        <div class="txt-message">for the event, timings and venue, please click on the event link..</div>
+
+      </section>
+
+
+      <section id="mehendi" class="mehendi">
+         <div class="txt-pray">With hearts alight in joy and gratitude to Allah <q>ﷻ</q></div>
+         <div class="txt-parent">Alhaj Mr Asif Ali Sayed & Mrs Wahida Sayed</div>
+         <div class="txt-invite">Delightfully invite you to an evening of colour, laughter, and blessings as we celebrate the joyous</div>
+
+         <div class="txt-groom">Mehndi Ceremony</div>
+         <div class="txt-invite">of their beloved son</div>
+
+         <div class="txt-groom">Hafiz Sayed Mudassir Ali</div>
+
+         <div class="txt-invite">Join us as we fill the night with the sparkle of lights, the rhythm of Joy, the fragrance of henna, and offering heartfelt duas for his upcoming union.</div>
+         
+         <div class="txt-date">In'sha Allah on: 22<sup>nd</sup> of December 2025 <i>~ 1<sup>st</sup> of Rajab 1447 AH</i></div>
+         <div class="txt-time">from 06:30 pm onwards</div>
+
+         <div class="txt-venue">At ~ The Club House, Raheja Vistas Premiere, Mohammedwadi, Pune: 411 060</div>
+
+         <div class="txt-invite">Your presence will add beauty to the colours, joy to the laughter, and barakah to the celebration.</div>
+
+         <div class="txt-message">kindly RSVP by 8<sup>th</sup> of December 2025</div>
+
+      </section>
+
+      <section id="haldi">
+        <div class="txt-pray">In humble gratitude to Allah <q>ﷻ</q> for His countless favours,</div>
+        <div class="txt-parent">Alhaj Mr Asif Ali Sayed & Mrs Wahida Sayed</div>
+        <div class="txt-invite">Cordially request the honour of your presence to grace the golden and blessed occasion of the</div>
+
+         <div class="txt-haldi">Haldi Ceremony</div>
+         <div class="txt-invite">in honour of their beloved son</div>
+
+         <div class="txt-groom">Hafiz Sayed Mudassir Ali</div>
+
+         <div class="txt-invite">Let us anoint the groom in the glow of haldi, shower him with heartfelt duas for love, harmony, and barakah in his marriage.</div>
+
+         <div class="txt-date">In'sha Allah on: 23<sup>rd</sup> of December 2025 <i>~ 2<sup>nd</sup> of Rajab 1447 AH</i></div>
+         <div class="txt-time">from 06:30 pm onwards</div>
+
+         <div class="txt-venue">At ~ The Club House, Raheja Vistas Premiere, Mohammedwadi, Pune: 411 060</div>
+
+         <div class="txt-invite">Your esteemed presence will honour the family and add joy to the celebration.</div>
+
+         <div class="txt-message">kindly RSVP by 8<sup>th</sup> of December 2025</div>
+
+      </section>
+
+      <section id="nikkah">
+        <div class="txt-hadith">It was narrated from Ibn Abbas (ra) that the Messenger of Allah <q>ﷺ</q> said
+          <span>There is nothing like marriage, for two who love one another. <i>(Sunan Ibn Majah)</i></span>
+        </div>
+
+        <div class="txt-parent">Alhaj Mr Asif Ali Sayed & Mrs Wahida Sayed</div>
+        <div class="txt-invite">Humbly seek your esteemed presence and benevolent blessings to grace the noble and auspicious occasion 
+          of the Solemnisation of the <span>Nikkah (wedding Ceremony)</span> uniting in the sacred bond of marriage.</div>
+
+        <div class="txt-groom">Hafiz Sayed Mudassir Ali</div>
+        <div class="ico-ring"><i>with</i></div>
+        <div class="txt-bride">Sayeda Farhana</div>
+        <div class="txt-host"><i>d/o.</i> Alhaj Mr Abrar Niyamutallah Sayed & Mrs. Fatima Abrar Sayed</div>
+
+        <div class="txt-date">In'sha Allah on: 24<sup>th</sup> of December 2025 <i>~ 3<sup>rd</sup> of Rajab 1447 AH</i></div>
+        <div class="txt-time">Nikah Ceremony at 07:00 pm followed by Dinner</div>
+
+        <div class="txt-venue">At ~ Alankaran Lawn, Kapil Woodrow, SRPF GR. II, Jagtap Chowk, Wanowrie, Pune: 411040</div>
+
+        <div class="txt-message">kindly RSVP by 8<sup>th</sup> of December 2025</div>
+       
+      </section>
+
+      <section id="walima">
+        <div class="txt-hadith">Abdullah ibn al-Zubayr (ra) reported: the Messenger of Allah <q>ﷺ</q> said
+          <span>Announce the marriage.. <i>(Sahih Ibn Hibban)</i></span>
+        </div>
+
+        <div class="txt-pray">With hearts filled with gratitude to Allah <q>ﷻ</q> for His boundless blessings,</div>
+
+        <div class="txt-parent">Alhaj Mr Asif Ali Sayed & Mrs Wahida Sayed</div>
+        <div class="txt-invite">Joyfully extend to you their heartfelt invitation to grace the blessed occasion of the 
+          <span>Walima (Reception)</span> celebrating the marriage of their beloved son.</div>
+
+        <div class="txt-groom">Hafiz Sayed Mudassir Ali</div>
+        <div class="ico-ring"><i>with</i></div>
+        <div class="txt-bride">Sayeda Farhana</div>
+        <div class="txt-host"><i>d/o.</i> Alhaj Mr Abrar Niyamutallah Sayed & Mrs. Fatima Abrar Sayed</div>
+
+        <div class="txt-date">In'sha Allah on: 25<sup>th</sup> of December 2025 <i>~ 4<sup>th</sup> of Rajab 1447 AH</i></div>
+        <div class="txt-time">Nikah Ceremony at 07:00 pm followed by Dinner</div>
+
+        <div class="txt-venue">At ~ Hyatt Regency Pune & Residences, Nagar Rd, Sakore Nagar, Viman Nagar, Pune: 411040</div>
+
+        <div class="txt-message">kindly RSVP by 8<sup>th</sup> of December 2025</div>
+
+      </section>  
+
+      <section id="rsvp">
+        <div class="txt-complim">
+            With best compliments and heartfelt duās from the families, grateful for your presence and prayers in making these blessed occasion truly memorable.
+        </div>
+
+        <div class="txt-family">
+          Presented with love and respect by:
+          <ul class="lst-family">
+            <li>Moin Ali Sayed</li>
+            <li>Munaf Ahmed Sayyed</li>
+            <li>Halima Sayed</li>
+            <li>Habiba Sayed</li>
+            <li>Moiz Ali Sayed</li>
+            <li>Farheen Sayed</li>
+            <li>Mehboob Ali Sayed</li>
+          </ul>
+        </div>
+
+        <div class="txt-rsvp">
+          RSVP via the link, should any difficulties arise contact <span>Mehboob Ali Sayed <i>(WhatsApp Only)</i> +27671560820</span>
+        </div>
+
+      </section>
+
+    </main>
 
     <footer>
-      <p>Countdown to the Nikah — 24 December 2025, 6:30 PM</p>
-      <p id="timer"></p>
-      <p>For assistance, please WhatsApp +27 671560820</p>
+      <div class="ftr-items">
+        <menu class="mnu-settings">
+          <li><a href="#hero" class="ico-home">Home</a></li>
+          <li><a href="#hero" class="ico-musicon">Audio</a></li>
+        </menu>
+
+        <menu class="mnu-invite bkg-glass">
+          <li><a href="#mehendi" class="ico-mehendi">Mehndi</a></li>
+          <li><a href="#haldi" class="ico-haldi">Haldi</a></li>
+          <li><a href="#nikkah" class="ico-nikkah">Nikkah</a></li>
+          <li><a href="#walima" class="ico-walima">Walima</a></li>            
+        </menu>
+
+        <menu class="mnu-rsvp">
+          <li><a href="#rsvp" class="ico-rsvp">RSVP</a></li>
+        </menu>
+      </div>
+    
     </footer>
   </div>
-</div>
 
-<script>
-const targetDate = new Date("2025-12-24T18:30:00+05:30").getTime();
-const timerEl = document.getElementById('timer');
-function updateCountdown(){
-  const now = Date.now();
-  const diff = targetDate - now;
-  if(diff<=0){timerEl.textContent="It's wedding time! 💍";return;}
-  const d = Math.floor(diff/(1000*60*60*24));
-  const h = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
-  const m = Math.floor((diff%(1000*60*60))/(1000*60));
-  const s = Math.floor((diff%(1000*60))/1000);
-  timerEl.textContent=`${d}d ${h}h ${m}m ${s}s remaining`;
-}
-updateCountdown();
-setInterval(updateCountdown,1000);
-</script>
+	<svg style="position: absolute; width: 0; height: 0">
+		<filter id="glass">
+			<feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="3" seed="2" result="turb" />
+			<feDisplacementMap in="SourceGraphic" in2="turb" scale="20" xChannelSelector="R" yChannelSelector="G" />
+		</filter>
+	</svg> 
+  
 </body>
 </html>
+
+<script>
+// Smooth scrolling for navigation links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+       target.scrollIntoView({ behavior: 'smooth', block: 'start' });       
+      }
+    });
+  });
+</script>
